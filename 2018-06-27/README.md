@@ -35,9 +35,7 @@
 海伦公式（a,b,c为三边边长）：
 
 <img src="http://latex.codecogs.com/gif.latex?p=\frac{a+b+c}2" />
-
-$$p=\frac{a+b+c}2$$
-$$S=\sqrt{p(p-a)(p-b)(p-c)}$$
+<img src="http://latex.codecogs.com/gif.latex?S=\sqrt{p(p-a)(p-b)(p-c)}" />
 
 测试数据：
 
