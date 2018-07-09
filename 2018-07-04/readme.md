@@ -21,3 +21,28 @@ Python生成随机数需要使用到random模块，方法如下：
 
     # random.gauss函数能生成正态分布的随机数
     c=random.gauss(0,1) # 生成一个服从均值为0，标准差为1的标准正态分布随机数
+
+
+### 答案：
+
+    import random
+
+    x=[]
+    for i in range(99):
+        x.append(random.randint(0,100))
+
+    x_avg=sum(x)/len(x)
+
+    s=0
+    for i in x:
+        s=s+(i-x_avg)**2
+
+    s=s/(len(x)-1)
+
+    x.sort()
+    if len(x)%2==0:
+        mid=(x[len(x)//2-1]+x[len(x)//2])/2
+    else:
+        mid=x[(len(x)-1)//2]
+
+    print('平均数：%s\n标准差：%s\n中位数：%s'%(x_avg,s,mid))
