@@ -121,3 +121,16 @@ b,5
 
 提示：
 利用循环遍历字符串中每个字符，利用字典统计每个字符出现的次数。
+
+### 答案
+
+    string = """Someone once said: "Don't be afraid if you find a crack on your soul, because that'll be where the sunshine comes in." There're too many wonderful things in this world. But life is so short and fragile. I want the authentic feeling that surpasses dreaming -- a love that is true and never fleeting. I want this for myself as well as for you. I'd like it for the world, if possible. Maybe God wants us to meet a few wrong people before meeting the right one, so that when it finally meet the person, it will know how to be grateful. 
+    """
+    mydict={}
+
+    for i in string:
+        if i==" " or i=="\n":
+            continue
+        mydict[i]=string.count(i)
+
+    print(mydict)
